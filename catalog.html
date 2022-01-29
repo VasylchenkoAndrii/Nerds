@@ -1,203 +1,207 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <nav>
-            <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="nerds logo"></a>
-            <ul>
-                <li><a href="blank.html">Студия</a></li>
-                <li><a href="blank.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-            </ul>
-            <a href="blank.html">Корзина</a>
-        </nav>
-    </header>
-    <!-- main comtent -->
-    <main>
-        <h1>Магазин готовых шаблонов</h1>
-        <!-- product filter -->
-        <section>
-            <h2>Фильтр товаров</h2>
-            <form method="get" action="https://echo.htmlacademy">
-                <!-- mesh section -->
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" name="product-group" value="adaptive" id="adaptive-filter" checked>
-                            <label for="adaptive-filter">Адаптивная</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="product-group" value="fixed" id="fixed-filter">
-                            <label for="fixed-filter">Фиксированная</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="product-group" value="rubber" id="rubber-filter">
-                            <label for="rubber-filter">Резиновая</label>
-                        </li>
-                    </ul>
-                </fieldset>
-
-                <!-- peculiarities section -->
-                <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="slider" id="filter-slider" checked>
-                            <label for="filter-slider">Слайдер</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="advantage-block" id="filter-advantage-block">
-                            <label for="filter-advantage-block">Блок преимущества</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="news" id="filter-news" checked>
-                            <label for="filter-news">Блок преимущества</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="gellary" id="filter-gellary">
-                            <label for="filter-gellary">Галерея</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="basket" id="filter-basket">
-                            <label for="filter-basket">Корзина</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button type="submit">Показать</button>
-            </form>
-        </section>
-
-        <!-- list of templates -->
-        <section>
-            <h2>Список готовых шаблонов</h2>
-            <div>
-                <div>
-                    <img src="img/browser.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/Mask-Sedona.png" width="358" height="578" alt="Макет сайта sedona">
-                </div>
-            </div>
-                <div>
-                    <img src="img/browser2.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/Mask-pink.png" width="358" height="578" alt="Макет сайта pink">
-                </div>
-            <div>
-                <div>
-                    <img src="img/browser2.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/Mask-borodinski.png" width="358" height="578" alt="Макет сайта Бородинский">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="img/browser2.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/Mask-mishka.png" width="358" height="578" alt="Макет сайта Mishka">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="img/browser2.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/A+.png" width="358" height="578" alt="Макет сайта A+">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="img/browser2.svg" width="360" height="40" alt="">
-                </div>
-                <div>
-                    <img src="img/kvast.png" width="358" height="578" alt="Макет сайта A+">
-                </div>
-            </div>
-
-            <ul>
-                <li>
-                    <a>1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">Следующая</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-   
-    <!-- footer section -->
-    <footer>
-        <!-- section map -->
-        <section>
-            <div>
-                <h2>Как нас найти </h2>
-                <h4>NЁRDS DESIGN STUDIO</h4>
-                <p>191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8 <br>
-                    тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-                <button>Напишите нам</button>
-            </div>
-        </section>
-        <!-- social networks -->
-        <section>
-            <h3>Социальные сети</h3>
-            <ul>
-                <li>
-                    <a href="#">Вконтакте</a>
-                </li>
-                <li>
-                    <a href="#">Фейсбук</a>
-                </li>
-                <li>
-                    <a href="#">Инстаграм</a>
-                </li>
-            </ul>
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
-    </footer>
-
-    <!-- modal window -->
+  <!-- header -->
+  <header>
+    <nav>
+      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="nerds logo"></a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+  <!-- main comtent -->
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <!-- product filter -->
     <section>
-        <h2>Напишите нам</h2>
-        
-        <form action="https://echo.htmlacademy" method="post">
-        <div>
-            <label>Ваше имя</label>
-            <input type="email" name="login" placeholder="Имя Фамилия">
-        </div>
-        <div>
-            <label>Ваш email</label>
-            <input type="email" name="login" placeholder="email@example.com">
-        </div>
-        <div>
-            <label>Текст письма</label>
-            <input type="email" name="login" placeholder="Текст письма в свободной форме">
-        </div>
-        </form>
-        <button>Отправить</button>
-        <button type="button" >Закрыть</button>
+      <h2>Фильтр товаров</h2>
+      <form method="get" action="https://echo.htmlacademy">
+        <!-- mesh section -->
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-group" value="adaptive" id="adaptive-filter" checked>
+              <label for="adaptive-filter">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="fixed" id="fixed-filter">
+              <label for="fixed-filter">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="rubber" id="rubber-filter">
+              <label for="rubber-filter">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- peculiarities section -->
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantage-block" id="filter-advantage-block">
+              <label for="filter-advantage-block">Блок преимущества</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Блок преимущества</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gellary" id="filter-gellary">
+              <label for="filter-gellary">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
+
+    <!-- list of templates -->
+    <section>
+      <h2>Список готовых шаблонов</h2>
+      <div>
+        <div>
+          <img src="img/browser.svg" width="360" height="40" alt="">
+        </div>
+        <div>
+          <img src="img/Mask-Sedona.png" width="358" height="578" alt="Макет сайта sedona">
+        </div>
+      </div>
+      <div>
+        <img src="img/browser2.svg" width="360" height="40" alt="">
+      </div>
+      <div>
+        <img src="img/Mask-pink.png" width="358" height="578" alt="Макет сайта pink">
+      </div>
+      <div>
+        <div>
+          <img src="img/browser2.svg" width="360" height="40" alt="">
+        </div>
+        <div>
+          <img src="img/Mask-borodinski.png" width="358" height="578" alt="Макет сайта Бородинский">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/browser2.svg" width="360" height="40" alt="">
+        </div>
+        <div>
+          <img src="img/Mask-mishka.png" width="358" height="578" alt="Макет сайта Mishka">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/browser2.svg" width="360" height="40" alt="">
+        </div>
+        <div>
+          <img src="img/A+.png" width="358" height="578" alt="Макет сайта A+">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/browser2.svg" width="360" height="40" alt="">
+        </div>
+        <div>
+          <img src="img/kvast.png" width="358" height="578" alt="Макет сайта A+">
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer>
+    <!-- section map -->
+    <section>
+      <div>
+        <h2>Как нас найти </h2>
+        <h4>NЁRDS DESIGN STUDIO</h4>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8 <br>
+          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <button>Напишите нам</button>
+      </div>
+    </section>
+    <!-- social networks -->
+    <section>
+      <h3>Социальные сети</h3>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+
+  <!-- modal window -->
+  <section>
+    <h2>Напишите нам</h2>
+
+    <form action="https://echo.htmlacademy" method="post">
+      <div>
+        <label>Ваше имя</label>
+        <input type="email" name="login" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label>Ваш email</label>
+        <input type="email" name="login" placeholder="email@example.com">
+      </div>
+      <div>
+        <label>Текст письма</label>
+        <input type="email" name="login" placeholder="Текст письма в свободной форме">
+      </div>
+    </form>
+    <button>Отправить</button>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

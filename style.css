@@ -1,0 +1,119 @@
+:root {
+  --basic-black: #000;
+  --basic-white: #fff;
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --basic-dark-grey: #283136;
+  --basic-grey: #EEEEEE;
+}
+
+body {
+  min-width: 1100px;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+.main-header {
+  background: #EEEEEE;
+}
+
+.navigation-section {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+}
+
+.logo-link {
+  
+}
+
+.navigation-list {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  list-style: none;
+  width: 437px;
+  justify-content: space-around;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  margin-top: 30px;
+}
+
+.navigation-list a {
+  color: #000;
+}
+
+.navigation-list a:hover {
+  color: #FB565A;
+}
+
+.basket {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.basket:hover {
+  color: #FB565A;
+}
+
+.basket-icon {
+  margin-right: 25px;
+}
+
+/* slider section */
+
+.header-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.header-slider-section {
+  background-image: url("../Nerds/img/nerds-index-slide1.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 760px;
+  height: 431px;
+}
+
+.header-preview {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* benefits section */
+
+.benefits-section {
+
+}
+
+.conteiner {
+  width: 1150px;
+  margin: 0 auto;
+}

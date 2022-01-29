@@ -29,6 +29,7 @@ img {
 /* header */
 
 .main-header {
+  padding-top: 50px;
   background: #EEEEEE;
 }
 
@@ -39,7 +40,13 @@ img {
 }
 
 .logo-link {
-  
+  margin-left: -65px;
+  padding: 0;
+}
+
+.logo-link:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 .navigation-list {
@@ -65,6 +72,12 @@ img {
   color: #FB565A;
 }
 
+.navigation-list a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
 .basket {
   font-style: normal;
   font-weight: 500;
@@ -79,13 +92,19 @@ img {
   color: #FB565A;
 }
 
+.basket:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
 .basket-icon {
   margin-right: 25px;
 }
 
 /* slider section */
 
-.header-subtitle {
+.header-subtitle-text {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -100,20 +119,212 @@ img {
   height: 431px;
 }
 
-.header-preview {
+.header-preview-text {
   font-style: normal;
   font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: var(--basic-dark-grey);
 }
 
-/* benefits section */
-
-.benefits-section {
-
+.button-to-learn-more {
+  margin-top: 38px;
+  padding: 17px 55px 15px 52px;
+  background: #FB565A;
+  border-radius: 3px; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
 }
+
+.button-to-learn-more:hover {
+  background: #E74246;
+}
+
+.button-to-learn-more:active {
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+}
+
+.button {
+  margin-top: 48px;
+}
+/* main section */
 
 .conteiner {
   width: 1150px;
   margin: 0 auto;
 }
+
+/* benefits section */
+
+.benefits-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 80px 0 155px 0;
+
+}
+
+.subtitle-benefits {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.benefits-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-grey);
+}
+
+.button-benefist__red {
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 3px;
+}
+
+.button-benefist__red:hover {
+  background: #E74246;
+}
+
+.button-benefist__red:active {
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-benefist__green {
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  border: none;
+  border-radius: 3px;
+}
+
+.button-benefist__green:hover {
+  background: #00BC6C;
+}
+
+.button-benefist__green:active {
+  background: #00AA62;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-benefist__yellow {
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-yellow);
+  border: none;
+  border-radius: 3px;
+}
+
+.button-benefist__yellow:hover {
+  background: #EAB534;
+}
+
+.button-benefist__yellow:active {
+  background: #E5A722;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* about company */
+
+.about-company-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.subtitle-about-company-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.tagline-about-company-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-grey);
+}
+
+.subtitle-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-dark-grey);
+}
+
+.subtitle-text-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-dark-grey);
+  margin-top: 35px;
+}
+
+.about-company-list {
+  list-style: none;
+  padding: 0;
+}
+
+.element-item {
+  width: 25px;
+  height: 2px;
+  color: var(--basic-red);
+}
+
+.features-about-company-list {
+  display: flex;
+}
+
+.features-about-company-item {
+  display: grid;
+}
+
+.interest {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  margin-right: 42px;
+}
+
+.interest-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+

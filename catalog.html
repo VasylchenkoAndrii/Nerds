@@ -16,7 +16,7 @@
   <!-- header -->
   <header>
     <header class="main-header">
-      <nav class="navigation-section conteiner">
+      <nav class="navigation-section">
         <a class="logo-link" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="nerds logo"></a>
         <ul class="navigation-list">
           <li class="navigation-item"><a href="blank.html">Студия</a></li>
@@ -33,12 +33,34 @@
     <!-- main comtent -->
   <main class="page-catalog conteiner">
    
-    <!-- product filter -->
-    <section class="filters">
+    <!-- product filter  -->
+    <section class="filters conteiner">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       
-      <p>Стоимость:</p>
-      
+      <!-- filter price form -->
+     <form class="form-section" action="get">
+       <fieldset class="filter-item">
+         <legend>Стоимость:</legend>
+         <div class="range-filter">
+           <div class="range-controls">
+            <div class="scala">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+           </div>
+           <div class="price-controls">
+            <label class="min-price">
+              ОТ <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              ДО <input type="number" name="max-price" value="15000">
+            </label>
+           </div>
+         </div>
+       </fieldset>
+      </form>
+
       <form class="filter" method="get" action="https://echo.htmlacademy">
        
         <!-- mesh section -->
@@ -86,7 +108,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
       </form>
     </section>
 
@@ -107,25 +129,25 @@
           <p class="filter-text-type">По типу</p>
           <p class="filter-text-type">По назначению</p>
         </div>
-        <img src="img/browser2.svg" width="360" height="40" alt="">
+        <img src="img/browser2.svg" width="358" height="40" alt="">
         <img class="img" src="img/Mask-pink.png" width="358" height="578" alt="Макет сайта pink">
       </div>
     </div>
       <div>
         <div>
-          <img src="img/browser2.svg" width="360" height="40" alt="">
+          <img src="img/browser2.svg" width="358" height="40" alt="">
           <img class="img" src="img/Mask-borodinski.png" width="358" height="578" alt="Макет сайта Бородинский">
         </div>
       </div>
       <div>
         <div>
-          <img src="img/browser2.svg" width="360" height="40" alt="">
+          <img src="img/browser2.svg" width="358" height="40" alt="">
           <img class="img" src="img/Mask-mishka.png" width="358" height="578" alt="Макет сайта Mishka">
         </div>
       </div>
       <div>
         <div>
-          <img src="img/browser2.svg" width="360" height="40" alt="">
+          <img src="img/browser2.svg" width="358" height="40" alt="">
           <img class="img" src="img/A+.png" width="358" height="578" alt="Макет сайта A+">
         </div>
       </div>
@@ -135,22 +157,25 @@
           <img class="img" src="img/kvast.png" width="358" height="578" alt="Макет сайта A+">
         </div>
       </div>
+    </section>
 
-      <ul>
-        <li>
+      <!-- pagination -->
+    <div class="pagination-section">
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current">
           <a>1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">3</a>
         </li>
-        <li>
-          <a href="#">Следующая</a>
+        <li class="pagination-item-last">
+          <a class="pagination-next" href="#">Следующая</a>
         </li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <!-- footer section -->

@@ -30,7 +30,7 @@
     <!-- slider section -->
     <section class="slider-section conteiner">
       <ul class="slider-list">
-        <li class="slider-item slide conteiner">
+        <li class="slider-item slide-current slide conteiner">
           <h2 class="slider-title">Долго, дорого,<br>
             скрупулезно.</h2>
           <p class="header-preview-text"> Математически выверенный дизайн<br>
@@ -38,10 +38,10 @@
           <form class="button"><a href="catalog.html" class="slide-button">Узнать больше</a></form>
           <img class="slider-1" src="img/nerds-index-slide1.svg" width="760" alt="431">
         </li>
-        <li class="slider-item slide slide-current conteiner">
-          <h2 class="slider-title">Любим математику <br> 
-          как никто другой</h2>
-          <p class="header-preview-text"> Никакого креатива, только математические формулы <br> 
+        <li class="slider-item slide  conteiner">
+          <h2 class="slider-title">Любим математику <br>
+            как никто другой</h2>
+          <p class="header-preview-text"> Никакого креатива, только математические формулы <br>
             для расчета идеальных пропорций</p>
           <form class="button"><a href="catalog.html" class="slide-button">Узнать больше</a></form>
           <img class="slider-2" src="img/nerds-index-slide2.svg" width="760" alt="431">
@@ -56,7 +56,7 @@
         </li>
       </ul>
       <div class="slider-controls">
-        <button class="button-sliders current" type="button" aria-label="Первый слайд"></button>
+        <button class="button-sliders button-sliders--active" type="button" aria-label="Первый слайд"></button>
         <button class="button-sliders" type="button" aria-label="Второй слайд"></button>
         <button class="button-sliders" type="button" aria-label="Третий слайд"></button>
       </div>
@@ -107,13 +107,16 @@
         <h4 class="subtitle-text">Выполняем заказы на разработку:</h4>
         <ul class="about-company-list">
           <li>
-            <hr class="element-item"><p class="element-item-text">Веб-сайтов любой сложности</p>
+            <hr class="element-item">
+            <p class="element-item-text">Веб-сайтов любой сложности</p>
           </li>
           <li>
-            <hr class="element-item"><p class="element-item-text">Мобильных приложений для iOS и Android</p>
+            <hr class="element-item">
+            <p class="element-item-text">Мобильных приложений для iOS и Android</p>
           </li>
           <li>
-            <hr class="element-item"><p class="element-item-text">Слайдшоу и видео для корпоративных презентаций</p>
+            <hr class="element-item">
+            <p class="element-item-text">Слайдшоу и видео для корпоративных презентаций</p>
           </li>
         </ul>
       </div>
@@ -219,27 +222,31 @@
     </section>
   </footer>
 
-  <!-- modal window -->
-  <!-- <section>
-    <h2>Напишите нам</h2>
+  <!-- modal window  -->
+  <section class="modal visually-hidden">
+    <div class="modal-contact-us">
+      <h2 class="modal-title">Напишите нам</h2>
 
-    <form action="https://echo.htmlacademy" method="post">
-      <div>
-        <label>Ваше имя</label>
-        <input type="email" name="login" placeholder="Имя Фамилия">
+      <form class="modal-form" action="https://echo.htmlacademy" method="post">
+        <div class="modal-form-row">
+          <div class="modal-form-input-field modal-form-name-field">
+            <label class="modal-forn-text-label">Ваше имя:</label>
+            <input class="modal-form-text-name" type="email" name="login" placeholder="  Имя Фамилия">
+          </div>
+          <div class="modal-form-input-field">
+            <label class="modal-forn-text-label">Ваш email:</label>
+            <input class="modal-form-text-email" type="email" name="login" placeholder="  email@example.com">
+        </div>
       </div>
-      <div>
-        <label>Ваш email</label>
-        <input type="email" name="login" placeholder="email@example.com">
-      </div>
-      <div>
-        <label>Текст письма</label>
-        <input type="email" name="login" placeholder="Текст письма в свободной форме">
-      </div>
-    </form>
-    <button>Отправить</button>
-    <button type="button">Закрыть</button>
-  </section> -->
+        <div class="modal-form-input-field">
+          <label class="modal-forn-text-label">Текст письма:</label>
+          <textarea class="modal-form-text-letter"  placeholder="В свободной форме"></textarea>
+        </div>
+      </form>
+      <button class="button-send" type="button">Отправить</button>
+    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>

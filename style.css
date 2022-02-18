@@ -794,6 +794,10 @@ hr.solid-3 {
   background-color: var(--basic-green);
 }
 
+.filter {
+  width: 260px;
+}
+
 /* product filter */
 
 .filters {
@@ -842,6 +846,10 @@ hr.solid-3 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.filter-list {
+  width: 260px;
 }
 
 .filter-option label {

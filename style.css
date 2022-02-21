@@ -872,30 +872,34 @@ hr.solid-3 {
   line-height: 19px;
 }
 
-.filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  left: -42px;
-  top: -3px;
-  width: 23px;
-  height: 23px;
-  background-image: url("../Nerds/img/sheckbox-off.svg");
-  opacity: 0.4;
-  border-radius: 3px;
-}
 
 .filter-input-checkbox:hover + label::before {
   opacity: 1;
 }
 
-.filter-input-checkbox:checked + label::after {
+
+.filter-input-checkbox:checked + label::after  {
   content: "";
   position: absolute;
   left: -42px;
   top: -3px;
   width: 25px;
   height: 23px;
-  background-image: url("../Nerds/img/checkbox-on.svg");
+  background-image: url("../Nerds/img/checkbox-on1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 3px;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox + label::after {
+  background-image: url("../Nerds/img/checkbox-off1.svg");
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -3px;
+  width: 25px;
+  height: 23px;
   background-repeat: no-repeat;
   background-position: 0 0;
   border-radius: 3px;
